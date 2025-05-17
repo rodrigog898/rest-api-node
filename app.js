@@ -29,7 +29,7 @@ app.use(cors({
 
 
 
-const port = 1234;  
+const port = process.env.PORT ?? 1234;  
 app.use(express.json());
 
 app.get('/', (req, res) => {
