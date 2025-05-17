@@ -29,7 +29,7 @@ app.use(cors({
 
 
 
-const port = process.env.PORT ?? 1234;  
+const PORT = process.env.PORT ?? 1234;  
 app.use(express.json());
 
 app.get('/', (req, res) => {
@@ -114,6 +114,6 @@ app.get('/movies/:id', (req, res) => {
 
 
 
-app.listen(port, () => {   
-    console.log(`servidor escuchando en el puerto ${port}`)
+app.listen(PORT, () => {   
+    console.log(`servidor escuchando en el puerto ${PORT}`)
 })
