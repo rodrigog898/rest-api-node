@@ -1,0 +1,38 @@
+########
+GET http://localhost:1234/movies
+
+
+#########
+
+GET http://localhost:1234/movies/8fb17ae1-bdfe-45e5-a871-4772d7e526b8
+
+#########
+GET http://localhost:1234/movies?genre=ACtion
+
+
+#########
+
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+{
+    "title": "caca",
+
+    "director": "jesus nolar",
+    "duration": 148,
+    "poster": "https://m.media-amazon.com/images/I/91Rc8cAmnAL._AC_UF1000,1000_QL80_.jpg",
+    "genre": [
+        "romance"  
+    ],
+    "rate": 8.8
+}
+
+
+##########
+
+PATCH http://localhost:1234/movies/aa391090-b938-42eb-b520-86ea0aa3917b
+Content-Type: application/json
+
+{
+    "year": 2023
+}
